@@ -14,6 +14,7 @@
         <activity android:name=".AppointmentsActivity" android:exported="false"/>
         <activity android:name=".SkillsActivity" android:exported="false"/>
         <receiver android:name=".ReminderReceiver" android:exported="false"/>
+        <receiver android:name=".CheckinReceiver" android:exported="false"/>
         <receiver android:name=".BootReceiver" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
@@ -23,6 +24,8 @@
         <activity android:name=".InfoActivity" android:exported="false"/>
         <activity android:name=".JobsActivity" android:exported="false"/>
         <activity android:name=".CravingSosActivity" android:exported="false"/>
+        <activity android:name=".MilestonesActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".CheckinActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
         <activity android:name=".ContactsActivity" android:exported="false"/>
         <activity android:name=".PlanActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
     </application>

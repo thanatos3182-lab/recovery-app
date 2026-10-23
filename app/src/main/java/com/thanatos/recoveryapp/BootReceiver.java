@@ -10,5 +10,6 @@ public class BootReceiver extends BroadcastReceiver {
         if (!Intent.ACTION_BOOT_COMPLETED.equals(i.getAction())) return;
         AppointmentDb db = new AppointmentDb(c);
         for (AppointmentDb.Appt a : db.upcoming()) Reminders.schedule(c, a);
+        CheckinReminder.schedule(c);
     }
 }

@@ -8,7 +8,9 @@ public class Topic {
         Button b = new Button(a);
         b.setText(title);
         b.setAllCaps(false);
-        b.setBackgroundColor(0xFFBBDEFB); // light blue
+        b.setTextColor(0xFF00FF00);
+
+        b.setBackgroundColor(0xFF000000); // light blue
         b.setOnClickListener(v -> InfoActivity.open(a, title));
         return b;
     }

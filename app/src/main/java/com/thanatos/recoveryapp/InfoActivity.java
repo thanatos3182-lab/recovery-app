@@ -22,6 +22,9 @@ public class InfoActivity extends Activity {
         String topic = getIntent().getStringExtra("topic");
         t.setText(LessonStore.get(topic));
         t.setTextSize(18);
+        t.setTextColor(0xFF00FF00);
+        t.setBackgroundColor(0xFF000000);
+
         t.setPadding(20, 20, 20, 20);
 
         scroll.addView(t);

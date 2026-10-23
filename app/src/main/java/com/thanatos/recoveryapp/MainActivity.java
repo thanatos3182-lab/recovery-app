@@ -5,6 +5,9 @@ import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
+import android.content.Intent;
+import android.net.Uri;
+
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.ViewGroup;
@@ -41,26 +44,45 @@ public class MainActivity extends Activity {
 
         LinearLayout root = new LinearLayout(this);
         root.setOrientation(LinearLayout.VERTICAL);
+        root.setBackgroundColor(0xFF000000); // dark blue background
+
+        root.setBackgroundColor(0xFF000000); // dark blue background
+
         root.setPadding(dp(16), dp(48), dp(16), dp(16));
+        root.addView(Banner.create(this));
+        LinearLayout tools = Section.create(this, "Recovery Tools");
+        Section.addItem(this, tools, "Set start date", () -> pickDate());
+        Section.addItem(this, tools, "Appointments", () -> startActivity(new Intent(this, AppointmentsActivity.class)));
+        Section.addItem(this, tools, "Coping skills", () -> startActivity(new Intent(this, SkillsActivity.class)));
+        Section.addItem(this, tools, "Crisis: 988", () -> startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse("tel:988"))));
+        root.addView(tools);
+        LinearLayout brain = Section.create(this, "Brain & Body");
+        Section.addItem(this, brain, "Neuroscience Class", () -> startActivity(new Intent(this, BrainActivity.class)));
+        root.addView(brain);
+
+
+
 
         dayText = new TextView(this);
         dayText.setTextSize(56);
+        dayText.setTextColor(0xFF00FF00);
+
         dayText.setTypeface(null, Typeface.BOLD);
         dayText.setGravity(Gravity.CENTER);
         root.addView(dayText);
 
         subText = new TextView(this);
         subText.setTextSize(16);
+        subText.setTextColor(0xFF00FF00);
+
         subText.setGravity(Gravity.CENTER);
         root.addView(subText);
 
-        Button dateBtn = new Button(this);
-        dateBtn.setText("Set start date");
-        dateBtn.setOnClickListener(v -> pickDate());
-        root.addView(dateBtn);
-        Nav.add(this, root);
 
         input = new EditText(this);
+        input.setTextColor(0xFF00FF00);
+        input.setHintTextColor(0xFF00FF00);
+
         input.setHint("How are you doing today?");
         input.setMinLines(3);
         input.setGravity(Gravity.TOP);

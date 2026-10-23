@@ -20,5 +20,6 @@
             </intent-filter>
         </receiver>
         <activity android:name=".BrainActivity" android:exported="false"/>
+        <activity android:name=".InfoActivity" android:exported="false"/>
     </application>
 </manifest>

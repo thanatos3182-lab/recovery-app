@@ -22,5 +22,6 @@
         <activity android:name=".BrainActivity" android:exported="false"/>
         <activity android:name=".InfoActivity" android:exported="false"/>
         <activity android:name=".JobsActivity" android:exported="false"/>
+        <activity android:name=".CravingSosActivity" android:exported="false"/>
     </application>
 </manifest>

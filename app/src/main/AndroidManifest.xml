@@ -23,5 +23,7 @@
         <activity android:name=".InfoActivity" android:exported="false"/>
         <activity android:name=".JobsActivity" android:exported="false"/>
         <activity android:name=".CravingSosActivity" android:exported="false"/>
+        <activity android:name=".ContactsActivity" android:exported="false"/>
+        <activity android:name=".PlanActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
     </application>
 </manifest>

@@ -55,6 +55,8 @@ public class MainActivity extends Activity {
         Section.addItem(this, tools, "Appointments", () -> startActivity(new Intent(this, AppointmentsActivity.class)));
         Section.addItem(this, tools, "Coping skills", () -> startActivity(new Intent(this, SkillsActivity.class)));
         Section.addItem(this, tools, "Craving SOS", () -> startActivity(new Intent(this, CravingSosActivity.class)));
+        Section.addItem(this, tools, "My Plan", () -> startActivity(new Intent(this, PlanActivity.class)));
+        Section.addItem(this, tools, "Support contacts", () -> startActivity(new Intent(this, ContactsActivity.class)));
         Section.addItem(this, tools, "Local jobs", () -> startActivity(new Intent(this, JobsActivity.class)));
         Section.addItem(this, tools, "Crisis: 988", () -> startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse("tel:988"))));
         root.addView(tools);

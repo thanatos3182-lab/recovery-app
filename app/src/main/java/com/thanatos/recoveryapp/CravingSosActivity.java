@@ -56,7 +56,7 @@ public class CravingSosActivity extends Activity {
 
         setContentView(root);
         showRate("You reached out, and that's already a win. Let's ride this out together.\n\nHow strong is the urge right now?",
-                v -> { urgeStart = v; showFeeling(); });
+                v -> { urgeStart = v; PlanStore.peek(this, v, () -> showFeeling()); });
     }
 
     @Override
@@ -202,6 +202,7 @@ public class CravingSosActivity extends Activity {
         content.addView(tv(skill, 24));
         content.addView(tv("Step " + (i + 1) + " of " + steps.length, 14));
         content.addView(tv(steps[i], 20));
+        if (skill.equals("Reach out") && i == 1) ContactsStore.addButtons(this, content);
         boolean last = i == steps.length - 1;
         content.addView(btn(last ? "Done. Start the 10-minute wait" : "Next", v -> {
             if (last) showTimer(); else walk(i + 1);

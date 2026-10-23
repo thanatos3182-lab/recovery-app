@@ -58,6 +58,7 @@ public class MainActivity extends Activity {
         dateBtn.setText("Set start date");
         dateBtn.setOnClickListener(v -> pickDate());
         root.addView(dateBtn);
+        Nav.add(this, root);
 
         input = new EditText(this);
         input.setHint("How are you doing today?");

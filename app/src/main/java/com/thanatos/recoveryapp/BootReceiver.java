@@ -11,5 +11,6 @@ public class BootReceiver extends BroadcastReceiver {
         AppointmentDb db = new AppointmentDb(c);
         for (AppointmentDb.Appt a : db.upcoming()) Reminders.schedule(c, a);
         CheckinReminder.schedule(c);
+        JobTrackerDb.rescheduleAll(c);
     }
 }

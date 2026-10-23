@@ -24,6 +24,8 @@
         <activity android:name=".InfoActivity" android:exported="false"/>
         <activity android:name=".JobsActivity" android:exported="false"/>
         <activity android:name=".CravingSosActivity" android:exported="false"/>
+        <activity android:name=".JobTrackerActivity" android:exported="false"/>
+        <activity android:name=".MeetingsActivity" android:exported="false"/>
         <activity android:name=".MilestonesActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
         <activity android:name=".CheckinActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
         <activity android:name=".ContactsActivity" android:exported="false"/>

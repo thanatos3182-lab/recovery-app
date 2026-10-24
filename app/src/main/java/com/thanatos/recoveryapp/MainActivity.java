@@ -51,6 +51,7 @@ public class MainActivity extends Activity {
         scroll.addView(root);
 
         root.addView(Banner.create(this));
+        root.addView(LivingHeader.create(this));
 
         LinearLayout now = Section.create(this, "Right now");
         Section.addItem(this, now, "Craving SOS", () -> go(CravingSosActivity.class));
@@ -114,6 +115,8 @@ public class MainActivity extends Activity {
         entriesBox.setOrientation(LinearLayout.VERTICAL);
         root.addView(entriesBox);
 
+        scroll.setAlpha(0f);
+        scroll.animate().alpha(1f).setDuration(450).start();
         setContentView(scroll);
     }
 
@@ -169,7 +172,7 @@ public class MainActivity extends Activity {
             today.set(Calendar.MILLISECOND, 0);
             long diff = today.getTimeInMillis() - prefs.getLong("start", 0);
             long days = Math.max(0, Math.round(diff / 86400000.0));
-            dayText.setText(days + (days == 1 ? " day" : " days"));
+            Live.countUp(dayText, days);
             subText.setText("One day at a time.");
         } else {
             dayText.setText("--");

@@ -29,6 +29,7 @@ public class Section {
                 ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         hp.setMargins(0, dp(a, 10), 0, dp(a, 4));
         header.setLayoutParams(hp);
+        Live.press(header);
 
         LinearLayout content = new LinearLayout(a);
         content.setOrientation(LinearLayout.VERTICAL);
@@ -37,6 +38,7 @@ public class Section {
         header.setOnClickListener(v -> {
             boolean open = content.getVisibility() == View.VISIBLE;
             content.setVisibility(open ? View.GONE : View.VISIBLE);
+            if (!open) { content.setAlpha(0f); content.animate().alpha(1f).setDuration(220).start(); }
             header.setText((open ? "\u25B8  " : "\u25BE  ") + title);
         });
 
@@ -66,6 +68,7 @@ public class Section {
         b.setTextColor(0xFF5AB4FF);
         b.setBackgroundColor(0xFF0D1B2A);
         b.setOnClickListener(v -> action.run());
+        Live.press(b);
 
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
                 0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f);

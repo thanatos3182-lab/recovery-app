@@ -64,6 +64,7 @@ public class MainActivity extends Activity {
         Section.addItem(this, daily, "Milestones and savings", () -> go(MilestonesActivity.class));
         Section.addItem(this, daily, "Appointments", () -> go(AppointmentsActivity.class));
         Section.addItem(this, daily, "Meetings", () -> go(MeetingsActivity.class));
+        Section.addItem(this, daily, "Find a sponsor", () -> go(SponsorActivity.class));
         Section.addItem(this, daily, "Set start date", () -> pickDate());
         root.addView(daily);
 

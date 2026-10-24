@@ -75,6 +75,7 @@ public class MainActivity extends Activity {
         Section.addItem(this, life, "Local jobs", () -> go(JobsActivity.class));
         Section.addItem(this, life, "Job tracker", () -> go(JobTrackerActivity.class));
         Section.addItem(this, life, "Housing", () -> go(HousingActivity.class));
+        Section.addItem(this, life, "Housing tracker", () -> go(HousingTrackerActivity.class));
         root.addView(life);
 
         LinearLayout learn = Section.create(this, "Learn");
@@ -108,6 +109,7 @@ public class MainActivity extends Activity {
         saveBtn.setOnClickListener(v -> saveEntry());
         root.addView(saveBtn);
 
+        root.addView(DailyLetter.create(this));
         entriesBox = new LinearLayout(this);
         entriesBox.setOrientation(LinearLayout.VERTICAL);
         root.addView(entriesBox);

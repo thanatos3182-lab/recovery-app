@@ -61,6 +61,7 @@ public class MainActivity extends Activity {
 
         LinearLayout daily = Section.create(this, "Daily");
         Section.addItem(this, daily, "Daily check-in", () -> go(CheckinActivity.class));
+        Section.addItem(this, daily, "Pattern insights", () -> go(InsightsActivity.class));
         Section.addItem(this, daily, "Milestones and savings", () -> go(MilestonesActivity.class));
         Section.addItem(this, daily, "Appointments", () -> go(AppointmentsActivity.class));
         Section.addItem(this, daily, "Meetings", () -> go(MeetingsActivity.class));

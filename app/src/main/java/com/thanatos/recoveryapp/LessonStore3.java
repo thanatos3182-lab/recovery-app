@@ -54,7 +54,7 @@ public class LessonStore3 {
                     + "TRY THIS\n1. Learn your signs: write what your body, thoughts, and behavior look like when you're above and below the window.\n2. Check in a few times a day. Where am I right now?\n3. If you're above: slow breathing with long exhales, grounding (5-4-3-2-1), a walk, muscle relaxation.\n4. If you're below: gentle activation, such as movement, music, daylight, a call to someone, or a task with small steps.\n5. Widen the window gradually: practice staying with mild discomfort for a little longer, then stop.\n6. If you find you're often far outside the window or it relates to trauma, a trauma-informed therapist can help with pacing.";
 
             default:
-                return null;
+                return LessonStore4.get(topic);
         }
     }
 }

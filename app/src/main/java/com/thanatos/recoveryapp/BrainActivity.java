@@ -42,6 +42,7 @@ public class BrainActivity extends Activity {
         root.addView(Topic.btn(this, "Sleep and Exercise"));
         root.addView(Topic.btn(this, "Fear Extinction"));
         root.addView(Topic.btn(this, "Window of Tolerance"));
+        root.addView(Topic.btn(this, "Interoceptive Prediction and Allostasis"));
 
         TextView more = new TextView(this);
         more.setText("Go deeper");

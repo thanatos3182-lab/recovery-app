@@ -28,6 +28,7 @@
         <activity android:name=".MeetingsActivity" android:exported="false"/>
         <activity android:name=".InsightsActivity" android:exported="false"/>
         <activity android:name=".RoutineActivity" android:exported="false"/>
+        <activity android:name=".ExportActivity" android:exported="false"/>
         <activity android:name=".HousingActivity" android:exported="false"/>
         <activity android:name=".SponsorActivity" android:exported="false"/>
         <activity android:name=".MilestonesActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>

@@ -63,6 +63,7 @@ public class MainActivity extends Activity {
         Section.addItem(this, daily, "Daily check-in", () -> go(CheckinActivity.class));
         Section.addItem(this, daily, "Pattern insights", () -> go(InsightsActivity.class));
         Section.addItem(this, daily, "Daily structure", () -> go(RoutineActivity.class));
+        Section.addItem(this, daily, "Counselor summary", () -> go(ExportActivity.class));
         Section.addItem(this, daily, "Milestones and savings", () -> go(MilestonesActivity.class));
         Section.addItem(this, daily, "Appointments", () -> go(AppointmentsActivity.class));
         Section.addItem(this, daily, "Meetings", () -> go(MeetingsActivity.class));

@@ -118,7 +118,7 @@ public class ButterflyView extends View {
 
         // heartbeat: a "lub-dub" every 1.1 seconds
         float ph = (now % 1100L) / 1100f;
-        float pulse = still ? 0f : bump(ph, 0.12f, 0.05f) + 0.7f * bump(ph, 0.38f, 0.06f);
+        float pulse = 0f;
         if (big && fl) pulse *= 1.6f;
 
         float flap;
@@ -127,7 +127,7 @@ public class ButterflyView extends View {
             flap = 1f;
         } else if (fl) {
             float k = (now - flutterStart) / 1000f;
-            flap = 0.65f + 0.35f * (float) Math.cos(2 * Math.PI * 7f * k);
+            flap = 0.65f + 0.35f * (float) Math.cos(2 * Math.PI * 1.5f * k);
             float p = (now - flutterStart) / (float) (flutterUntil - flutterStart);
             bob = -6f * (float) Math.sin(Math.PI * p);
         } else {
@@ -141,9 +141,7 @@ public class ButterflyView extends View {
 
         int a1 = (int) Math.min(255, 18 + 70 * pulse);
         glow.setAlpha(a1);
-        c.drawCircle(54, 56, 38 + 8 * pulse, glow);
         glow.setAlpha((int) (a1 * 0.5f));
-        c.drawCircle(54, 56, 50 + 6 * pulse, glow);
 
         float ps = 1f + 0.05f * pulse;
         c.translate(0, bob);

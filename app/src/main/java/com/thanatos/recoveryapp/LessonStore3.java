@@ -1,0 +1,60 @@
+package com.thanatos.recoveryapp;
+
+public class LessonStore3 {
+    public static String get(String topic) {
+        if (topic == null) return null;
+        switch (topic) {
+
+            case "Cognitive Reframing":
+                return "COGNITIVE REFRAMING\n\n"
+                    + "WHAT IT IS\nCognitive reframing (cognitive reappraisal) means changing how you interpret a situation so that your emotional reaction changes with it. It is the core skill of cognitive behavioral therapy.\n\n"
+                    + "IN THE BRAIN\nYour emotions follow your appraisal of an event, not just the event. In imaging studies, reappraising a distressing picture or situation engages prefrontal regions (lateral and ventrolateral prefrontal cortex, dorsomedial prefrontal cortex) and is linked to lower amygdala activity. A large meta-analysis of these studies found this pattern consistently.\n\n"
+                    + "Compare it with suppression, which means forcing the feeling down and hiding it. Suppression doesn't reduce the inner experience and tends to cost more in stress and memory. Reappraisal usually works better because it changes the feeling at the source.\n\n"
+                    + "Timing matters. Reappraisal works best early, before an emotion peaks. When distress is already at a very high intensity, simpler tools like distraction, slow breathing, or movement tend to work better first. Then reappraise once you've come down.\n\n"
+                    + "COMMON THINKING TRAPS\n- All-or-nothing: 'I slipped, so I've blown it.'\n- Catastrophizing: 'This will ruin everything.'\n- Mind reading: 'They think I'm a failure.'\n- Emotional reasoning: 'I feel hopeless, so it is hopeless.'\n- Should statements: 'I should be over this by now.'\n- Labeling: 'I'm a loser' instead of 'I made a mistake.'\n\n"
+                    + "WHY IT MATTERS IN RECOVERY\nShame and hopelessness are common triggers. A thought like 'I've ruined it, so why bother' can lead straight to use. Catching and testing that thought gives you a different path. CBT for substance use has moderate support in research, especially as part of a broader plan.\n\n"
+                    + "TRY THIS\n1. Catch it: what thought just went through your mind?\n2. Name the trap it fits.\n3. Test it: what's the evidence for and against? What would a friend say?\n4. Write a balanced version that you actually believe, not a forced positive one.\n5. Re-rate the feeling 1 to 10.\n6. Keep a daily thought record. The brain strengthens what it practices.";
+
+            case "Rumination and the Default Mode Network":
+                return "RUMINATION AND THE DEFAULT MODE NETWORK\n\n"
+                    + "WHAT IT IS\nRumination is repetitive, passive replaying of problems, mistakes, and bad feelings without moving toward a solution. The default mode network (DMN) is a set of brain regions most active when you're not focused on the outside world.\n\n"
+                    + "IN THE BRAIN\nThe DMN includes the medial prefrontal cortex, the posterior cingulate cortex, the angular gyrus, and parts of the hippocampus. It supports useful things: remembering, imagining the future, understanding other people, and thinking about yourself. It is not a bad network. The problem is when it gets stuck in a loop. Studies of depression have linked rumination to overactive or poorly regulated default mode connectivity, though the relationship is complex.\n\n"
+                    + "Research separates two kinds of self-focus. Reflection is trying to understand something and move forward. Brooding is passive, comparing, and repeating: 'why do I always do this?' Brooding is the kind linked to worse mood and more relapse risk.\n\n"
+                    + "Rumination also feeds craving. One influential model describes craving growing when intrusive thoughts get elaborated with vivid mental imagery. Interrupting the elaboration weakens it.\n\n"
+                    + "Mindfulness is linked to lower default-mode activity during meditation in experienced meditators, and one small study in smokers found reduced craving alongside it. These are early results, but they fit the larger picture.\n\n"
+                    + "WHY IT MATTERS IN RECOVERY\nA mind that replays shame at 2 a.m. is a mind looking for relief. Learning to spot the loop early and shift out of it protects you.\n\n"
+                    + "TRY THIS\n1. Notice it: say 'I'm ruminating' as soon as you catch it. Naming it creates distance.\n2. Switch to something that absorbs attention: movement, a task with steps, a conversation, a puzzle.\n3. Ask 'what's one small action I could take?' If there's an action, do it or schedule it. If there isn't, let it go for now.\n4. Set a 10-minute worry window each day. When worries come up outside it, tell them 'later.'\n5. Practice returning to the breath. Each time you notice you've drifted and come back is one rep.";
+
+            case "Sleep and Exercise":
+                return "SLEEP AND EXERCISE\n\n"
+                    + "WHAT IT IS\nTwo of the most powerful things you can do for your brain's recovery, and neither requires any special equipment.\n\n"
+                    + "SLEEP IN THE BRAIN\nSleep is when the brain consolidates what you learned, clears metabolic waste, and resets emotional circuits. In imaging studies, a night of lost sleep led to a stronger amygdala response to negative images and weaker connection with the prefrontal cortex, which means stronger reactions and weaker brakes. It also increases cravings for high-reward things in several studies. Whether REM sleep specifically 'resets' emotions is still debated, but the effects of sleep loss on mood are well documented.\n\n"
+                    + "Sleep trouble is very common in early recovery and can last weeks to months. Insomnia is linked to higher relapse risk, so it's worth treating. The first-line treatment is CBT for insomnia (CBT-I), which works better long term than sleep medication for many people. Talk to your doctor before using any sleep aid in recovery.\n\n"
+                    + "EXERCISE IN THE BRAIN\nExercise raises dopamine and endorphins, and raises BDNF, a protein that supports connections between neurons. In older adults, a year of aerobic exercise increased hippocampal volume in one well-known trial. In people with substance use disorders, reviews find exercise tends to reduce cravings and improve mood and sleep, though study quality is mixed and effects are modest. Short bouts can reduce cravings in the moment, with the strongest evidence for nicotine.\n\n"
+                    + "WHY IT MATTERS IN RECOVERY\nSleep and exercise both strengthen the prefrontal brakes and calm the stress system. They are not extras. They're part of the treatment.\n\n"
+                    + "TRY THIS\n1. Keep the same wake time every day, even on weekends. It anchors your body clock.\n2. Get daylight in the morning.\n3. Cut caffeine in the afternoon and keep screens dim before bed.\n4. Keep your bedroom cool and dark. If you can't sleep after a while, get up and do something calm until you're drowsy.\n5. Aim for regular movement most days. Guidelines suggest about 150 minutes of moderate activity a week, but start with whatever you can do, such as a 10-minute walk.\n6. Pick something you enjoy. The best exercise is the one you keep doing.";
+
+            case "Fear Extinction":
+                return "FEAR EXTINCTION\n\n"
+                    + "WHAT IT IS\nExtinction is how the brain learns that something that used to predict danger no longer does. It is the basis of exposure therapy and one reason cravings fade with practice.\n\n"
+                    + "IN THE BRAIN\nWhen a cue is linked with something frightening, the amygdala, especially its basolateral part, stores that association. During extinction, you meet the cue repeatedly without the bad outcome. The brain doesn't erase the original memory. It builds a second, competing memory that says 'this is safe now.' That new memory depends on the ventromedial prefrontal cortex, which sends calming signals to the amygdala, and on the hippocampus, which tracks context.\n\n"
+                    + "Because the old memory is still there, fear can return in three known ways: spontaneous recovery (after time passes), renewal (back in the original setting), and reinstatement (after a stressful event). That is normal and doesn't mean the learning failed.\n\n"
+                    + "Sleep helps consolidate extinction learning, and stress impairs it. Some lab research on updating memories while they are briefly reactivated (reconsolidation) is promising but still experimental and is not an established treatment.\n\n"
+                    + "THE LINK TO CRAVINGS\nCravings work much the same way: a cue predicts reward, and extinction teaches that the cue no longer leads to use. Because extinction is tied to context, practicing in many places and situations makes it travel better.\n\n"
+                    + "WHY IT MATTERS IN RECOVERY\nWhen a craving or fear shows up and you stay with it without acting or avoiding, you are doing the learning, not failing at it. Avoidance feels better in the moment, but it blocks the new learning.\n\n"
+                    + "TRY THIS\n1. Build a small ladder: list situations from mildly to very uncomfortable.\n2. Start at the bottom. Stay until the intensity eases, then repeat on another day.\n3. Drop safety crutches over time, such as always bringing someone or always keeping an escape route.\n4. Practice in different settings so the new learning isn't tied to one place.\n5. Sleep well after practice sessions.\n6. For trauma-related fears, work with a trained therapist. Trauma-focused treatments are effective, and going at the right pace matters.";
+
+            case "Window of Tolerance":
+                return "WINDOW OF TOLERANCE\n\n"
+                    + "WHAT IT IS\nThe window of tolerance is a model, developed by psychiatrist Dan Siegel, for the zone of arousal in which you can think clearly and handle emotions. It is a useful clinical framework, not a measured brain structure.\n\n"
+                    + "THE THREE ZONES\nInside the window: alert, flexible, able to think and feel at the same time.\n\nAbove the window (hyperarousal): anxious, angry, racing heart, panic, can't sit still, impulsive. Urges feel urgent.\n\nBelow the window (hypoarousal): numb, flat, foggy, shut down, disconnected, exhausted. Numbing and avoidance are common here.\n\n"
+                    + "IN THE BRAIN\nThe model lines up with what research shows about the regulation network. With moderate arousal, the prefrontal cortex works well. With very high arousal, stress chemicals and the amygdala override it. With very low arousal or shutdown, engagement and motivation circuits drop out. Some versions of the model borrow from polyvagal theory, which is popular but contested among researchers, so treat the nervous-system details as a metaphor and the practical skills as the useful part.\n\n"
+                    + "Chronic stress, trauma, and substance use can narrow the window. The good news is it can widen with practice and support.\n\n"
+                    + "WHY IT MATTERS IN RECOVERY\nCravings and relapses often come from sitting outside the window, either too wound up or too numb. Learning your own signs of each zone lets you shift sooner.\n\n"
+                    + "TRY THIS\n1. Learn your signs: write what your body, thoughts, and behavior look like when you're above and below the window.\n2. Check in a few times a day. Where am I right now?\n3. If you're above: slow breathing with long exhales, grounding (5-4-3-2-1), a walk, muscle relaxation.\n4. If you're below: gentle activation, such as movement, music, daylight, a call to someone, or a task with small steps.\n5. Widen the window gradually: practice staying with mild discomfort for a little longer, then stop.\n6. If you find you're often far outside the window or it relates to trauma, a trauma-informed therapist can help with pacing.";
+
+            default:
+                return null;
+        }
+    }
+}

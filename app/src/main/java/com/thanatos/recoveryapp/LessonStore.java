@@ -84,7 +84,7 @@ public class LessonStore {
                 break;
 
             default:
-                return "Lesson coming soon.";
+                String x = LessonStore2.get(topic); if (x == null) return "Lesson coming soon."; body = x; break;
         }
         return body + FOOT;
     }

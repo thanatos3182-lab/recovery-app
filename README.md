@@ -11,7 +11,7 @@ A free, private Android app for people working on their recovery. Everything sta
 - **Find a sponsor:** how it works and where to meet people
 - **Daily letter:** a thought, a brain fact, and a small challenge each day
 
-## Install (Android only)
+## Install (Android 7.0 or newer)
 
 1. On your phone, open the [latest release](../../releases/latest) and tap **RecoveryApp.apk** to download it.
 2. Open the downloaded file. Android will ask you to allow installs from your browser. That's a one-time switch.

@@ -1,4 +1,9 @@
 plugins { id 'com.android.application' }
+
+def keystoreProps = new Properties()
+def keystoreFile = rootProject.file("keystore.properties")
+if (keystoreFile.exists()) keystoreProps.load(new FileInputStream(keystoreFile))
+
 android {
     namespace 'com.thanatos.recoveryapp'
     compileSdk 34
@@ -8,6 +13,25 @@ android {
         targetSdk 34
         versionCode 1
         versionName "1.0"
+    }
+    signingConfigs {
+        release {
+            if (keystoreFile.exists()) {
+                storeFile file(keystoreProps['storeFile'])
+                storePassword keystoreProps['storePassword']
+                keyAlias keystoreProps['keyAlias']
+                keyPassword keystoreProps['keyPassword']
+            }
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+        }
+    }
+    lint {
+        checkReleaseBuilds false
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17

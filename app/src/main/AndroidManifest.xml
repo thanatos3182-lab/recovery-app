@@ -37,5 +37,6 @@
         <activity android:name=".ContactsActivity" android:exported="false"/>
         <activity android:name=".PlanActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
         <activity android:name=".BasicsActivity"/>
+        <activity android:name=".BackupActivity"/>
     </application>
 </manifest>

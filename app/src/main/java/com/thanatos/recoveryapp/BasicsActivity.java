@@ -86,7 +86,7 @@ public class BasicsActivity extends Activity {
         zip.setHint("ZIP code or City, ST (for \"near me\" links)");
         zip.setHintTextColor(0xFF008800);
         zip.setTextColor(GREEN);
-        zip.setText(prefs.getString("zip", ""));
+        zip.setText(prefs.getString("zip", getSharedPreferences("jobs", MODE_PRIVATE).getString("zip", "")));
         zip.setBackground(outline());
         zip.setPadding(dp(12), dp(12), dp(12), dp(12));
         root.addView(zip);

@@ -70,6 +70,7 @@ public class MainActivity extends Activity {
         Section.addItem(this, daily, "Meetings", () -> go(MeetingsActivity.class));
         Section.addItem(this, daily, "Find a sponsor", () -> go(SponsorActivity.class));
         Section.addItem(this, daily, "Set start date", () -> pickDate());
+        Section.addItem(this, daily, "Backup and restore", () -> go(BackupActivity.class));
         root.addView(daily);
 
         LinearLayout life = Section.create(this, "Next steps");

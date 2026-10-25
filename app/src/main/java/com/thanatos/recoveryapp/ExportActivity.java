@@ -158,7 +158,7 @@ public class ExportActivity extends Activity {
         StringBuilder sb = new StringBuilder();
         DateFormat df = DateFormat.getDateInstance(DateFormat.MEDIUM);
         sb.append("RECOVERY SUMMARY\nPrepared ").append(df.format(new Date()))
-                .append("\nSelf-reported in RecoveryApp.\n");
+                .append("\nSelf-reported in Chrysalis.\n");
 
         long d = days();
 

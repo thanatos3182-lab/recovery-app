@@ -1,4 +1,4 @@
-# RecoveryApp
+# Chrysalis
 
 A free, private Android app for people working on their recovery. Everything stays on your phone: no accounts, no ads, no tracking, and the app doesn't have internet access.
 
@@ -13,7 +13,7 @@ A free, private Android app for people working on their recovery. Everything sta
 
 ## Install (Android 7.0 or newer)
 
-1. On your phone, open the [latest release](../../releases/latest) and tap **RecoveryApp.apk** to download it.
+1. On your phone, open the [latest release](../../releases/latest) and tap the **.apk** file under Assets to download it.
 2. Open the downloaded file. Android will ask you to allow installs from your browser. That's a one-time switch.
 3. Tap Install. If Play Protect warns that the app is unrecognized, choose **Install anyway**. It's not in the Play Store.
 
@@ -25,7 +25,7 @@ Your entries, check-ins, plan, and trackers are stored only on your phone. Nothi
 
 ## Please read
 
-RecoveryApp is a self-help tool. It's not medical care and doesn't replace a doctor, counselor, or treatment program. If you're in crisis in the US, call or text **988**.
+Chrysalis is a self-help tool. It's not medical care and doesn't replace a doctor, counselor, or treatment program. If you're in crisis in the US, call or text **988**.
 
 ## About
 

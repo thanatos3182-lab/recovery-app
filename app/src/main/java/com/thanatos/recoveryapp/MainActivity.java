@@ -73,6 +73,7 @@ public class MainActivity extends Activity {
         root.addView(daily);
 
         LinearLayout life = Section.create(this, "Next steps");
+        Section.addItem(this, life, "Basics", () -> go(BasicsActivity.class));
         Section.addItem(this, life, "Local jobs", () -> go(JobsActivity.class));
         Section.addItem(this, life, "Job tracker", () -> go(JobTrackerActivity.class));
         Section.addItem(this, life, "Housing", () -> go(HousingActivity.class));

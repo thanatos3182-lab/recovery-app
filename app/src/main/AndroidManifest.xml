@@ -36,5 +36,6 @@
         <activity android:name=".CheckinActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
         <activity android:name=".ContactsActivity" android:exported="false"/>
         <activity android:name=".PlanActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".BasicsActivity"/>
     </application>
 </manifest>
